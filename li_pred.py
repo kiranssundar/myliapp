@@ -20,6 +20,7 @@ ss["sm_li"] = clean_sm(ss["web1h"])
 ss["parent"] = clean_sm(ss["parent"])
 ss["married"] = clean_sm(ss["married"])
 ss["education"] = np.where(ss["education"] > 8, np.nan, ss["education"])
+ss["income"] = np.where(ss["income"] > 9, np.nan, ss["income"])
 ss["age"] = np.where(ss["age"] > 98, np.nan, ss["age"])
 def clean_female(x):
     return np.where(x==2, 1, 0)
