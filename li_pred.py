@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix
 import streamlit as st 
 import plotly.graph_objects as go
 
-s = pd.read_csv("c:/Users/kiran/OneDrive/myapp/social_media_usage.csv")
+s = pd.read_csv("social_media_usage.csv")
 
 def clean_sm(x):
     return np.where(x==1, 1, 0)
